@@ -1,0 +1,77 @@
+*{margin:0; padding:0; box-sizing:border-box;}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(218, 220, 225);
+}
+
+.encabezado {
+    background-color:cornflowerblue;
+    color: antiquewhite;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    line-height: 1.5;
+}
+
+nav ul {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  display: flex;
+}
+
+nav dl {
+    padding: 7px;
+    padding-inline: 20px;
+    background-color:palegreen;
+    border-radius: 8px;
+    margin-left:8px;
+}
+
+
+
+.cuerpo {
+    margin:auto; /*esto se usa para centrarlo en la pagina*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    max-width: 50%;
+    border-radius: 10px;
+    border: 1px solid grey;
+    line-height: 1.5;
+    background-color: whitesmoke;
+}
+
+.cuerpo h2 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.cuerpo p {
+    text-align: justify;
+}
+
+.cuerpo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+}
+
+.parques {
+    
+    border-radius: 8px;
+    margin: 8px;
+    padding: 8px;
+    line-height: 2;
+}
+
+.parques dl {
+    margin: 20px;
+    background-color: rgb(218, 220, 225);
+    padding: 20px;
+    border-radius: 8px;
+}
