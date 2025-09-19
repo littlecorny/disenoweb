@@ -1,0 +1,171 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.site-header {
+    grid-area: header;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:rgb(44, 43, 43);
+    color: white;
+
+}
+
+
+.menu {
+    display: flex;
+;
+}
+
+.menu dl {
+    margin: 10;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "banner main aside"
+    "footer footer footer";
+    grid-template-columns: 150px 1fr 220px;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.banner {
+    grid-area:banner;
+    background-color: chocolate;
+    padding: 20px;
+    color: white;
+}
+
+main {
+    grid-area: main;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: darkgrey;
+    display: flex;
+    padding: 20px;
+}
+
+.site-footer {
+    grid-area: footer;
+}
+
+.rejilla {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px 200px 100px;
+    gap: 12px;
+    padding: 16px;
+}
+
+.card { 
+    border: 1px solid #ddd;  /* Borde gris suave */ 
+    background: #fafafa;  /* Fondo gris muy claro */
+    border-radius: 8px;      /* Esquinas redondeadas */ 
+    padding: 10px;           /* Espaciado interno */ 
+}
+
+.card--meta { 
+  display: flex; 
+  flex-direction: column; /* Eje principal vertical */ 
+  justify-content: center;/* Centra verticalmente dentro de su celda */ 
+  align-items: flex-center;/* Texto alineado a la izquierda */ 
+  gap: 6px;               /* Espacio entre título y fecha */ 
+} 
+ 
+/* Estilo del título dentro de la tarjeta */ 
+.card-title { margin: 0; font-weight: 600; } 
+ 
+.card-date  { font-size: 0.9rem; color: #6b6b6b; }
+
+.card--media { 
+  display: flex; 
+  flex-direction: column; /* Apila imagen + caption */ 
+  align-items: center;    /* Centra horizontal */ 
+  justify-content: center;/* Centra vertical */ 
+  gap: 8px;               /* Espacio entre imagen y texto */ 
+  background: #f3f3f3;    /* Fondo ligeramente más oscuro */ 
+} 
+
+.card--media img { 
+  width: 120px; 
+  height: 120px; 
+  max-width: 100%;       /* Evita que se desborde en pantallas pequeñas */ 
+  border-radius: 10px;   /* Bordes redondeados */ 
+  object-fit: cover;     /* Rellena el recuadro recortando sin deformar */ 
+} 
+ 
+/* Texto debajo de la imagen, centrado */ 
+.card-caption { margin: 0; text-align: center; } 
+ 
+/* ============================================================ 
+   FILA 3: AVATAR + TEXTO + BOTÓN (Flex en fila) 
+   ============================================================ */ 
+ 
+.card--row { 
+  display: flex;           /* Elementos en fila */ 
+  align-items: center;     /* Centrado vertical */ 
+  gap: 10px;               /* Separación entre elementos */ 
+  padding: 12px; 
+  background: #fff;        /* Fondo blanco */ 
+  border: 1px solid #ccc;  /* Borde más fuerte */ 
+
+}
+
+.card--row .avatar { 
+ width: 48px; 
+  height: 48px; 
+  border-radius: 50%;   /* Lo hace circular */ 
+  object-fit: cover;    /* Ajusta la imagen sin deformar */ 
+} 
+
+.articulos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 12px;
+    grid-template-areas:
+    "card1 card2 card3"
+    "card4 card5 card6"
+    "card7 card8 card9";
+    min-height: 50vh;
+    padding: 20px;
+}
+
+section article {
+  
+    text-align: center;
+    
+}
+
+
+.card1 { 
+    grid-area: card1;
+    text-align: center;
+}
+.card2 { 
+    grid-area: card2; 
+}
+
+.card3 { grid-area: card3; }
+
+.card4 { grid-area: card4; }
+.card5 { grid-area: card5; }
+.card6 { grid-area: card6; }
+.card7 { grid-area: card7; }
+.card8 { grid-area: card8; }
+.card9 { grid-area: card9; }
+
