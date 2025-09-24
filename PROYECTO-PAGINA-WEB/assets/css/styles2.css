@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f6d2e1;
+
+}
+
+/* fuentes */
+
+@font-face {
+    font-family: TwinkleDiamond;
+    src: url(TwinkleDiamondDEMO.otf);
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* HEADER*/
+
+header {
+    background-image: url('/PROYECTO-PAGINA-WEB/assets/img/fondosps.png');
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+header img {
+    height: 100%;
+}
+
+
+/* Menú de navegación */
+.custom-dropdown-toggle {
+    background-color: #ff9d5b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.custom-dropdown-toggle:hover,
+.custom-dropdown-toggle:focus {
+    background-color: #FF7FAA;
+    color: white;
+}
+
+/* Estilo del menú desplegable */
+.dropdown-menu {
+    background-color: #FFE4E1;
+    border-radius: 10px;
+    padding: 0.5rem 0;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    padding: 0.5rem 1.5rem;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #FF9D5B;
+    color: white;
+    border-radius: 5px;
+}
+
+/* HEADER FIN*/
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "img1 img2 img3"
+        "img4 img5 img6"
+        "img7 img8 img9";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.grid-container p {
+    margin: 1rem;
+    padding: 2px;
+    line-height: 0;
+    font-weight: 500;
+}
+
+.grid-container .texto-producto:hover {
+    color: #f95289;
+}
+
+.grid-container img {
+    width: 10rem;
+    height: 10rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.grid-container img:hover {
+    transform: scale(1.05);
+}
+
+.img1 { grid-area: img1; }
+.img2 { grid-area: img2; }
+.img3 { grid-area: img3; }
+.img4 { grid-area: img4; }
+.img5 { grid-area: img5; }
+.img6 { grid-area: img6; }
+.img7 { grid-area: img7; }
+.img8 { grid-area: img8; }
+.img9 { grid-area: img9; }
+
+
+/* FOOTER */
+footer {
+    grid-area: footer;
+    background-color: #f95289;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
