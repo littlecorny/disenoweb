@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f6d2e1;
+
+}
+
+/* fuentes */
+
+@font-face {
+    font-family: TwinkleDiamond;
+    src: url(TwinkleDiamondDEMO.otf);
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* fuentes end */
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "banner main aside"
+        "footer footer footer";
+    grid-template-columns: 100px 2fr 100px;
+    grid-template-rows: auto 3fr auto;
+    min-height: 100vh;
+}
+
+/* HEADER*/
+
+header {
+    background-image: url('/PROYECTO-PAGINA-WEB/assets/img/fondosps.png');
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+header img {
+    height: 100%;
+}
+
+
+/* Menú de navegación */
+.custom-dropdown-toggle {
+    background-color: #ff9d5b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.custom-dropdown-toggle:hover,
+.custom-dropdown-toggle:focus {
+    background-color: #FF7FAA;
+    color: white;
+}
+
+/* Estilo del menú desplegable */
+.dropdown-menu {
+    background-color: #FFE4E1;
+    border-radius: 10px;
+    padding: 0.5rem 0;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    padding: 0.5rem 1.5rem;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #FF9D5B;
+    color: white;
+    border-radius: 5px;
+}
+
+/* HEADER FIN*/
+
+/* MAIN */
+
+main {
+    grid-area: main;
+    padding: 2rem;
+}
+
+
+.titulo {
+    margin-top: 2rem;
+}
+
+h2{
+    font-family: TwinkleDiamond;
+    color: #f95289;
+    text-align: center;
+  
+}
+
+
+h5 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+/* GALERIA FIN */
+
+
+/* CATEGORIAS */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 10rem;
+}
+
+.card img {
+    width: auto;
+    height: 100%;
+}
+
+.card h5 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card a {
+    display: flex;
+    justify-content: center;
+    background-color: #ff9d5b;
+    color:#333;
+    border-width: 0;
+    font-weight: 500;
+}
+
+.card a:hover {
+    background-color:#f95289;
+    color: white;
+}
+
+
+
+/* OFERTAS */
+
+h3 {
+    text-align: center;
+    margin-bottom: 3rem;
+    
+}
+
+.productos {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;    
+    justify-content: center;
+}
+
+
+
+.productos img {
+    width: 15rem;
+    height: 15rem;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+    
+}
+
+.productos img:hover {
+    transform: scale(1.1);
+
+}
+
+.productos p {
+    line-height: 0.5;
+}
+
+
+.texto-producto:hover,
+.texto-producto:focus {
+    color: #f95289;
+    cursor: pointer;
+}
+
+.nombre-producto {
+    font-weight: 600;
+}
+
+
+
+/* MAIN FIN */
+
+
+
+/* ASIDES */
+.banner {
+    grid-area: banner;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+
+/* FOOTER */
+footer {
+    grid-area: footer;
+    background-color: #f95289;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
