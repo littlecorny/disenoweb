@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* header */
+
+#cabecera {
+    background-color: rgb(13, 46, 108);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+
+/* body */
+
+body {
+    background-color:rgb(233, 240, 255);
+}
+
+figure {
+    padding: 0.5rem;
+    margin:1rem;
+    line-height: 1.5;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* hijos */
+
+h2 {
+    color: rgb(13, 46, 108);
+    font-weight: 500;
+}
+
+
+/* especificaciones clases */
+
+.destacado {
+    font-weight: 700;
+    color:rgb(62, 110, 201);
+}
+
+.parrafo-color {
+    background-color:rgb(74, 120, 206);
+    color: white;
+    border-radius: 4px;
+    border-width: 3px;
+    border-style: dotted;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+
+/* tipografia */
+
+.tipografia {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    color: rgb(13, 46, 108);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.parrafo-tipografia {
+    margin: 1rem;
+}
+
+
+/* footer */
+
+footer {
+    margin-top: 100%;
+    background-color: cornflowerblue;
+    padding: 1rem;
+}
