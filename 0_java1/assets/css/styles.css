@@ -1,0 +1,21 @@
+
+  body[data-theme="light"] {
+    background-color: white;
+    color: black;
+  }
+
+  body[data-theme="dark"] {
+    background-color: #121212;
+    color: white;
+  }
+
+  #cambiarFondo {
+    margin: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  #estado {
+    margin: 20px;
+    font-weight: bold;
+  }
