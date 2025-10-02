@@ -166,6 +166,6 @@ let trabajadores = [
 for (let i = 0; i < trabajadores.length; i++) {
     const datos = trabajadores[i];
 
-    let suma=datos.salario;
-    console.log(suma)
+    let suma=datos.salario;//no funciona
+    console.log();
 }
